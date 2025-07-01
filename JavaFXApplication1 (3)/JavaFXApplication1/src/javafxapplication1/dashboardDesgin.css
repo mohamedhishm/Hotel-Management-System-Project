@@ -1,0 +1,44 @@
+.button-red {
+    -fx-background-color: #8E1616;
+    -fx-text-fill: #F1EFEC;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button-red:hover {
+    -fx-background-color: #a01e1e; /* لون أفتح عند المرور */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* -------------------------------------- */
+
+.button-blue {
+    -fx-background-color: #123458;
+    -fx-text-fill: #F1EFEC;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button-blue:hover {
+    -fx-background-color: #1a4a7a;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* -------------------------------------- */
+
+.button-beige {
+    -fx-background-color: #D4C9BE;
+    -fx-text-fill: #030303;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button-beige:hover {
+    -fx-background-color: #e5ddd4;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

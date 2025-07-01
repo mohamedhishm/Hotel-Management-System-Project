@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="main_form" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.DashboardController">
+   <children>
+      <StackPane layoutX="141.0" layoutY="108.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="129.0" layoutY="134.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <AnchorPane prefHeight="35.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane layoutX="115.0" layoutY="-82.0" prefHeight="59.0" prefWidth="1100.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="closeBtn" layoutX="1041.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="59.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                                       <graphic>
+                                          <FontAwesomeIcon glyphName="CLOSE" />
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="minimizeBtn" layoutX="973.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="24.0" prefWidth="60.0">
+                                       <graphic>
+                                          <FontAwesomeIcon glyphName="MINUS" />
+                                       </graphic>
+                                    </Button>
+                                    <FontAwesomeIcon glyphName="BUILDING" layoutX="14.0" layoutY="20.0" size="1.5em" />
+                                    <Label layoutX="39.0" layoutY="6.0" text="Hotel management system">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="565.0" prefWidth="247.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="83.0" prefHeight="565.0" prefWidth="247.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="20.0" layoutY="196.0" prefHeight="267.0" prefWidth="200.0" style="-fx-background-color: #E8C999; -fx-background-radius: 1; -fx-border-radius: 1; -fx-border-color: #FF6363;">
+                                       <children>
+                                          <Button fx:id="aboutUs_btn" layoutX="19.0" layoutY="201.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #8E1616;" text="About Us" textFill="#dbffcb" />
+                                       </children></AnchorPane>
+                                    <FontAwesomeIcon glyphName="USER" layoutX="73.0" layoutY="103.0" size="10em" wrappingWidth="100.4285717010498" />
+                                    <Label fx:id="username" alignment="CENTER" layoutX="74.0" layoutY="147.0" text="In Our Hotel">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Line endX="207.0" endY="208.0" layoutX="2.0" layoutY="30.0" startX="27.0" startY="208.0" />
+                                    <Button fx:id="dashboard_btn" layoutX="39.0" layoutY="258.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #8E1616;" text="Dashboard" textFill="#dbffcb" />
+                                    <Button fx:id="availableRooms_btn" layoutX="38.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #8E1616;" text="Available Rooms" textFill="#dbffcb" />
+                                    <Button fx:id="customers_btn" layoutX="38.0" layoutY="351.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #8E1616;" text="Customers" textFill="#dbffcb" />
+                                    <Button fx:id="logout_btn" layoutX="16.0" layoutY="513.0" mnemonicParsing="false" onAction="#logout">
+                                       <graphic>
+                                          <FontAwesomeIcon glyphName="SIGN_OUT" size="2.5em" />
+                                       </graphic>
+                                    </Button>
+                                    <Label layoutX="73.0" layoutY="519.0" text="Sign Out">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="username1" alignment="CENTER" layoutX="84.0" layoutY="120.0" text="Welcome,">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="username11" alignment="CENTER" layoutX="74.0" layoutY="199.0" prefHeight="32.0" prefWidth="77.0" text="Menu">
+                                       <font>
+                                          <Font name="Book Antiqua" size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane fx:id="dashboard_form" layoutX="-4.0" prefHeight="565.0" prefWidth="853.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="589.0" layoutY="34.0" prefHeight="135.0" prefWidth="226.0" style="-fx-background-color: #E8C999;" />
+                                    <AnchorPane layoutX="23.0" layoutY="14.0" prefHeight="169.0" prefWidth="820.0" styleClass="green-bg" stylesheets="@dashboardDesgin.css">
+                                       <children>
+                                          <AnchorPane layoutX="44.0" layoutY="23.0" prefHeight="43.0" prefWidth="149.0" styleClass="white-bg">
+                                             <children>
+                                                <AnchorPane prefHeight="134.0" prefWidth="234.0" style="-fx-background-color: #E8C999;" />
+                                                <AnchorPane layoutX="7.0" layoutY="-3.0" prefHeight="130.0" prefWidth="231.0" />
+                                                <FontAwesomeIcon glyphName="CHECK" layoutX="37.0" layoutY="57.0" size="3em" />
+                                                <Label layoutX="68.0" layoutY="96.0" text="Today's book">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="dashboard_bookToday" alignment="TOP_RIGHT" layoutX="99.0" layoutY="14.0" prefHeight="25.0" prefWidth="117.0" text="O">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="295.0" layoutY="16.0" prefHeight="135.0" prefWidth="230.0" styleClass="white-bg">
+                                             <children>
+                                                <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="131.0" prefWidth="228.0" style="-fx-background-color: #E8C999;" />
+                                                <FontAwesomeIcon glyphName="MONEY" layoutX="26.0" layoutY="57.0" size="3em" />
+                                                <Label layoutX="57.0" layoutY="96.0" text="Today's Income">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="dashboard_incomeToday" alignment="TOP_RIGHT" layoutX="120.0" layoutY="14.0" prefHeight="25.0" prefWidth="102.0" text="0.0$">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="570.0" layoutY="16.0" prefHeight="142.0" prefWidth="230.0" styleClass="white-bg">
+                                             <children>
+                                                <Label layoutX="48.0" layoutY="98.0" text="Total Income">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="dashboard_totalIncome" alignment="TOP_RIGHT" layoutX="107.0" layoutY="16.0" prefHeight="25.0" prefWidth="106.0" text="0.0$">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <FontAwesomeIcon glyphName="DOLLAR" layoutX="17.0" layoutY="59.0" size="3em" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="23.0" layoutY="207.0" prefHeight="341.0" prefWidth="822.0" styleClass="green-bg" stylesheets="@dashboardDesgin.css">
+                                       <children>
+                                          <AreaChart fx:id="dashboard_areaChart" layoutX="-60.0" layoutY="-59.0" prefHeight="341.0" prefWidth="822.0" title="Income Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </AreaChart>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="availableRooms_form" layoutX="56.0" layoutY="44.0" prefHeight="565.0" prefWidth="853.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="9.0" layoutY="18.0" prefHeight="527.0" prefWidth="240.0" style="-fx-background-color: #E8C999;" styleClass="cyan-bg" stylesheets="@dashboardDesgin.css">
+                                       <children>
+                                          <TextField fx:id="availableRooms_roomNumber" layoutX="77.0" layoutY="48.0" style="-fx-background-color: #F8EEDF;" />
+                                          <Label layoutX="22.0" layoutY="52.0" text="Room #:" />
+                                          <Label layoutX="14.0" layoutY="97.0" text="Room type:" />
+                                          <ComboBox fx:id="availableRooms_roomType" layoutX="77.0" layoutY="93.0" onAction="#availableRoomsRoomType" prefWidth="150.0" promptText="Choose" style="-fx-background-color: #F8EEDF;" />
+                                          <ComboBox fx:id="availableRooms_status" layoutX="77.0" layoutY="130.0" onAction="#availableRoomsStatus" prefWidth="150.0" promptText="Choose" style="-fx-background-color: #F8EEDF;" />
+                                          <Label layoutX="14.0" layoutY="130.0" text="Status:" />
+                                          <TextField fx:id="available_Rooms_price" layoutX="77.0" layoutY="163.0" style="-fx-background-color: #F8EEDF;" />
+                                          <Label layoutX="22.0" layoutY="167.0" text="Price:" />
+                                          <Button fx:id="available_Rooms_addBtn" layoutX="25.0" layoutY="279.0" mnemonicParsing="false" onAction="#availableRoomsAdd" prefHeight="34.0" prefWidth="63.0" style="-fx-background-color: #8E1616; -fx-border-color: #F8EEDF; -fx-border-radius: 5; -fx-background-radius: 5;" text="Add" textFill="#f8eedf" />
+                                          <Button fx:id="available_Rooms_updateBtn" layoutX="141.0" layoutY="279.0" mnemonicParsing="false" onAction="#availableRoomsUpdate" prefHeight="34.0" prefWidth="63.0" style="-fx-background-color: #8E1616; -fx-background-radius: 5; -fx-border-color: #F8EEDF; -fx-border-radius: 5;" text="Update" textFill="#f8eedf" />
+                                          <Button fx:id="available_Rooms_clearBtn" layoutX="25.0" layoutY="327.0" mnemonicParsing="false" onAction="#availableRoomsClear" prefHeight="34.0" prefWidth="63.0" style="-fx-background-color: #8E1616; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #F8EEDF;" text="Clear" textFill="#f8eedf" />
+                                          <Button fx:id="available_Rooms_deleteBtn" layoutX="141.0" layoutY="327.0" mnemonicParsing="false" onAction="#availableRoomsDlete" prefHeight="34.0" prefWidth="63.0" style="-fx-background-color: #8E1616; -fx-background-radius: 5; -fx-border-color: #F8EEDF; -fx-border-radius: 5;" text="Delete" textFill="#f8eedf" />
+                                          <Button fx:id="available_Rooms_checkInBtn" layoutX="63.0" layoutY="395.0" mnemonicParsing="false" onAction="#availableRoomsCheckIn" prefHeight="39.0" prefWidth="115.0" style="-fx-background-color: #94B4C1; -fx-background-radius: 7; -fx-border-color: #213448; -fx-border-radius: 7;" text="Check-In" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="258.0" layoutY="19.0" prefHeight="527.0" prefWidth="576.0" style="-fx-background-color: #E8C999;" styleClass="cyan-bg" stylesheets="@dashboardDesgin.css">
+                                       <children>
+                                          <TableView fx:id="available_Rooms_tableView" layoutX="13.0" layoutY="64.0" onMouseClicked="#availableRoomSelectData" prefHeight="453.0" prefWidth="553.0" style="-fx-background-color: #F8EEDF;">
+                                            <columns>
+                                              <TableColumn fx:id="available_Rooms_col_roomNumber" prefWidth="112.0" text="Room #" />
+                                              <TableColumn fx:id="available_Rooms_col_roomType" prefWidth="96.0" text="Room Type" />
+                                                <TableColumn fx:id="available_Rooms_col_status" prefWidth="130.0" text="Status" />
+                                                <TableColumn fx:id="available_Rooms_col_price" prefWidth="214.0" text="Price" />
+                                            </columns>
+                                          </TableView>
+                                          <TextField fx:id="available_Rooms_search" layoutX="14.0" layoutY="24.0" prefHeight="25.0" prefWidth="233.0" promptText="    Search" />
+                                          <FontAwesomeIcon glyphName="SEARCH" layoutX="21.0" layoutY="40.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="customer_Form" layoutX="78.0" layoutY="71.0" prefHeight="565.0" prefWidth="853.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="10.0" layoutY="13.0" prefHeight="537.0" prefWidth="834.0">
+                                       <children>
+                                          <TableView fx:id="customers_tableView" layoutX="14.0" layoutY="62.0" prefHeight="465.0" prefWidth="812.0">
+                                            <columns>
+                                              <TableColumn fx:id="customers_customerNumber" prefWidth="89.0" text="Customers #" />
+                                              <TableColumn fx:id="customers_firstName" prefWidth="82.0" text="First Name" />
+                                                <TableColumn fx:id="customers_lastName" prefWidth="93.0" text="Last Name" />
+                                                <TableColumn fx:id="customers_phoneNumber" prefWidth="129.0" text="Phone #" />
+                                                <TableColumn fx:id="customers_totalPayment" prefWidth="110.0" text="Total Payment" />
+                                                <TableColumn fx:id="customers_checkedIn" prefWidth="160.0" text="Checked-In" />
+                                                <TableColumn fx:id="customers_checkedOut" prefWidth="148.0" text="Checked-Out" />
+                                            </columns>
+                                          </TableView>
+                                          <TextField fx:id="customers_search" layoutX="14.0" layoutY="14.0" onKeyTyped="#customerSearch" prefHeight="25.0" prefWidth="306.0" promptText="Search" style="-fx-background-color: #8E1616;" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

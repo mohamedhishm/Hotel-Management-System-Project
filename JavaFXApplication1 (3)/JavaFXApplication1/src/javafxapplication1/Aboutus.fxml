@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="aboutPage" prefHeight="481.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="17.0" layoutY="14.0" prefHeight="459.0" prefWidth="708.0">
+         <children>
+            <AnchorPane layoutX="-3.0" layoutY="3.0" prefHeight="163.0" prefWidth="686.0" style="-fx-background-color: #E8C999;" />
+            <AnchorPane layoutX="-3.0" layoutY="170.0" prefHeight="284.0" prefWidth="287.0" style="-fx-background-color: #E8C999;" />
+            <AnchorPane layoutX="423.0" layoutY="200.0" prefHeight="246.0" prefWidth="261.0" style="-fx-background-color: #E8C999;">
+               <children>
+                  <Text fill="#850e35" layoutX="59.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Vision">
+                     <font>
+                        <Font name="Forte" size="29.0" />
+                     </font>
+                  </Text>
+                  <Line endX="49.199981689453125" layoutX="141.0" layoutY="76.0" startX="-88.99999237060547" stroke="#850e35" />
+                  <Text layoutX="5.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To be one of the leading hotels in the region by delivering unmatched guest experiences and consistently raising the standards of service and comfort." wrappingWidth="243.7368392944336">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text fill="#850e35" layoutX="7.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About US">
+               <font>
+                  <Font name="Forte" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="#27374d" layoutX="18.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Hatrga3lrna Hotel, your home away from home.At Hateg3lna Hotel, we combine comfort, elegance, and exceptional service to offer our guests a truly memorable stay. Located in the heart of the city, our hotel is the perfect destination for both business and leisure travelers." wrappingWidth="669.3368453979492">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Text>
+            <Line endX="49.199981689453125" layoutX="89.0" layoutY="39.0" startX="-88.99999237060547" stroke="#850e35" />
+            <Text fill="#850e35" layoutX="42.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Who We Are">
+               <font>
+                  <Font name="Forte" size="29.0" />
+               </font>
+            </Text>
+            <Line endX="78.19998168945312" layoutX="121.0" layoutY="204.0" startX="-88.99999237060547" stroke="#850e35" />
+            <Text layoutX="11.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hatrga3lena Hotel is a modern, fully serviced hotel that prides itself on providing world-class hospitality. Since opening our doors, we have welcomed thousands of guests from around the globe, offering them comfort, relaxation, and personalized attention." wrappingWidth="243.7368392944336">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#5f8d4e" layoutX="291.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MORE THN JUST  A STAY IT'S A FELLING" wrappingWidth="139.19998168945312">
+               <font>
+                  <Font name="Forte" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Line endX="-3.0000038146972656" endY="359.1999816894531" layoutX="3.0" layoutY="107.0" startX="-3.0000133514404297" startY="-107.0" stroke="#27548a" strokeWidth="14.0" />
+      <Line endX="693.9005126953125" endY="-106.99999237060547" layoutX="13.0" layoutY="107.0" startX="-3.0000133514404297" startY="-107.0" stroke="#27548a" strokeWidth="14.0" />
+      <Line endX="-13.000003814697266" endY="356.1999816894531" layoutX="13.0" layoutY="117.0" startX="705.9005126953125" startY="356.1999816894531" stroke="#27548a" strokeWidth="14.0" />
+      <Line endX="702.700439453125" endY="356.1999816894531" layoutX="13.0" layoutY="117.0" startX="702.700439453125" startY="-126.89949798583984" stroke="#27548a" strokeWidth="14.0" />
+   </children>
+</AnchorPane>

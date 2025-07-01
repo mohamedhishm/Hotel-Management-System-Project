@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stack_form" prefHeight="494.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.CheckInController">
+   <children>
+      <BorderPane fx:id="checkIn_form" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="45.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="129.0" layoutY="1.0" prefHeight="46.0" prefWidth="242.0" text="Hotel Management | Check-IN" textFill="#27374d">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Label>
+                  <Line endX="155.80001831054688" endY="6.2000274658203125" layoutX="209.0" layoutY="34.0" startX="-103.4000015258789" startY="6.2000274658203125" stroke="#27374d" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="159.0" layoutY="53.0" prefHeight="601.6" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="567.0" prefWidth="474.0">
+                           <children>
+                              <AnchorPane layoutX="-14.0" layoutY="-15.0" prefHeight="661.0" prefWidth="494.0" style="-fx-background-color: #FFF5E4;">
+                                 <children>
+                                    <ComboBox fx:id="roomType" layoutX="21.0" layoutY="288.0" onAction="#roomTypeList" prefWidth="150.0" promptText="Choose" />
+                                    <ComboBox fx:id="roomNumber" layoutX="267.0" layoutY="288.0" onAction="#roomNumberList" prefWidth="150.0" promptText="Choose" />
+                                    <Text layoutX="29.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-IN Date">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <DatePicker fx:id="checkOut_date" layoutX="256.0" layoutY="382.0" onAction="#totalDays" prefHeight="27.0" prefWidth="154.0" promptText="MM-DD-YYYY" />
+                                    <TextField fx:id="firstName" layoutX="27.0" layoutY="117.0" prefHeight="34.0" prefWidth="170.0" style="-fx-border-color: #27374D; -fx-border-radius: 7;" />
+                                    <Text layoutX="36.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="267.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="lastName" layoutX="257.0" layoutY="113.0" prefHeight="34.0" prefWidth="170.0" style="-fx-border-color: #27374D; -fx-border-radius: 7;" />
+                                    <Text layoutX="263.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Label layoutX="266.0" layoutY="531.0" text="Total:">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="total" layoutX="317.0" layoutY="531.0" text="0.0$">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="261.0" layoutY="496.0" text="Total Days:">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="totalDays" layoutX="358.0" layoutY="496.0" text="--">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="phoneNumber" layoutX="21.0" layoutY="204.0" prefHeight="34.0" prefWidth="170.0" style="-fx-border-color: #27374D; -fx-border-radius: 7;" />
+                                    <Text layoutX="27.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <DatePicker fx:id="checkIn_date" layoutX="29.0" layoutY="382.0" prefHeight="27.0" prefWidth="154.0" promptText="MM-DD-YYYY" />
+                                    <Button layoutX="73.0" layoutY="587.0" mnemonicParsing="false" onAction="#reset" prefHeight="46.0" prefWidth="78.0" style="-fx-background-color: #850E35; -fx-border-color: #FFF5E4; -fx-background-radius: 15; -fx-border-width: 3; -fx-border-radius: 13;" text="Reset" textFill="#fff5e4">
+                                       <font>
+                                          <Font name="Lucida Bright" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="256.0" layoutY="587.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="94.0" style="-fx-background-color: #5F8D4E; -fx-border-color: #FFF5E4; -fx-background-radius: 15; -fx-border-width: 3; -fx-border-radius: 13;" text="Receipt" textFill="#fff5e4">
+                                       <font>
+                                          <Font name="Lucida Bright" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="372.0" layoutY="587.0" mnemonicParsing="false" onAction="#customerCheckIn" prefHeight="46.0" prefWidth="94.0" style="-fx-background-color: #285430; -fx-border-color: #FFF5E4; -fx-background-radius: 15; -fx-border-width: 3; -fx-border-radius: 13;" text="Check_In" textFill="#fff5e4">
+                                       <font>
+                                          <Font name="High Tower Text" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Text layoutX="250.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-Out Date">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="27.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="270.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room #">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="emailAdderss" layoutX="264.0" layoutY="204.0" prefHeight="34.0" prefWidth="170.0" style="-fx-border-color: #27374D; -fx-border-radius: 7;" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="14.0" layoutY="-6.0" prefHeight="47.0" prefWidth="114.0" text="Check_In" textFill="#850e35">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="244.0" layoutY="8.0" prefHeight="26.0" prefWidth="138.0" text="Customer Number :" textFill="#850e35">
+                                 <font>
+                                    <Font name="Tahoma" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="customerNumber" layoutX="382.0" layoutY="10.0" prefHeight="22.0" prefWidth="45.0" text="1" textFill="#850e35">
+                                 <font>
+                                    <Font name="Impact" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="60.399993896484375" endY="6.2000274658203125" layoutX="68.0" layoutY="33.0" startX="-71.10001373291016" startY="6.2000274658203125" stroke="#27374d" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

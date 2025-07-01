@@ -1,0 +1,107 @@
+/*
+ * Updated on : May 26, 2025
+ * Author     : Gemini (with user's color palette)
+ */
+
+/* Background for the StackPane (if needed, though AnchorPane usually covers it) */
+.stack-pane {
+    -fx-background-color: #F1EFEC; /* Off-White/Very Light Beige - as a subtle base */
+}
+
+/* Left Pane - Branding Area */
+.left-form {
+    -fx-background-color: #123458; /* Deep Blue - for a strong, corporate look */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 0, 5); /* Subtle shadow for depth */
+}
+
+/* Left Pane Label (Hotel Management) */
+.left-form Label {
+    -fx-text-fill: #D4C9BE; /* Light Tan/Beige - contrasts well with deep blue */
+    -fx-font-family: "Bell MT Bold"; /* Keeping original font */
+    -fx-font-size: 22.0px;
+}
+
+/* Left Pane Icon (Building) */
+.left-form FontAwesomeIcon {
+    -fx-fill: #F1EFEC; /* Off-White/Very Light Beige - clean icon color */
+}
+
+/* Right Pane - Login Form Area */
+.white-bg { /* Renamed for clarity but keeps original FXML class */
+    -fx-background-color: #F1EFEC; /* Off-White/Very Light Beige - clean background for the form */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0); /* Soft shadow */
+}
+
+/* Right Pane Sign In Label */
+.white-bg Label {
+    -fx-text-fill: #123458; /* Deep Blue - for the main heading */
+    -fx-font-family: "Britannic Bold"; /* Keeping original font */
+    -fx-font-size: 29.0px;
+}
+
+/* Right Pane Icon (User) */
+.white-bg FontAwesomeIcon[glyphName="USER"] { /* Target specific icon by glyphName */
+    -fx-fill: #123458; /* Deep Blue - matching the heading */
+}
+
+
+/* Text Fields (Username, Password) */
+.textfield {
+    -fx-background-color: transparent;
+    -fx-border-color: #D4C9BE; /* Light Tan/Beige - subtle border */
+    -fx-border-width: 0px 0px 1.5px 0px; /* Slightly thicker border for definition */
+    -fx-font-size: 14px; /* Slightly larger font for readability */
+    -fx-font-family: "Tahoma";
+    -fx-text-fill: #030303; /* Almost Black - for input text */
+    -fx-prompt-text-fill: #888888; /* A standard grey for prompt text */
+}
+
+.textfield:focused {
+    -fx-border-color: #123458; /* Deep Blue - highlight on focus */
+    -fx-border-width: 0px 0px 2.5px 0px; /* More prominent focus line */
+}
+
+/* Login Button */
+.login-btn {
+    -fx-background-color: #8E1616; /* Dark Red - for a distinct action button */
+    -fx-text-fill: white; /* White text on the dark red button */
+    -fx-font-size: 15px; /* Good size for a button */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px; /* Slightly rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2); /* Subtle shadow */
+}
+
+.login-btn:hover {
+    -fx-background-color: #A02020; /* Slightly lighter red on hover */
+}
+
+.login-btn:pressed {
+    -fx-background-color: #7A0A0A; /* Darker red when pressed */
+    -fx-effect: none; /* Remove shadow when pressed */
+}
+
+/* Close Button (top right) */
+.close-btn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%; /* Makes it round */
+    -fx-cursor: hand;
+    -fx-padding: 5px; /* Adds padding around the icon */
+}
+
+.close-btn:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.05); /* Very subtle transparent black on hover */
+}
+
+.close-btn:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Close Icon inside the button */
+.close-btn FontAwesomeIcon {
+    -fx-fill: #8E1616; /* Dark Red - for the close icon */
+}
+
+.close-btn:hover FontAwesomeIcon {
+-fx-fill: #A02020; /* Slightly lighter red on hover */
+}
