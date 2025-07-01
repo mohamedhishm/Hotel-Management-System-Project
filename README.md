@@ -1,94 +1,64 @@
-🏨 Hotel Management System Project
-A Java-based Hotel Management System designed to streamline and automate hotel operations such as guest registration, room reservations, housekeeping coordination, and staff access management. Built with JavaFX for the user interface, this project demonstrates core object-oriented programming principles and real-world application design.
+# 🏨 Hotel Management System Project
 
-🚀 Features
-🔐 Authentication System
+A Java-based **Hotel Management System** designed to automate hotel operations including guest registration, room booking, housekeeping management, and staff access. This project features a modern JavaFX user interface and demonstrates core OOP concepts.
 
-Secure Login/Register screens with role-based access (Guest or Employee).
+---
 
-Persistent user data storage using files.
+## 🚀 Features
 
-🛏️ Room Management
+- 🔐 **Authentication System**  
+  - Login/Register with role-based access (Guest or Employee)  
+  - File-based user data storage  
 
-Different room types: StandardRoom and HighRoom.
+- 🛏️ **Room Management**  
+  - Room types: `StandardRoom` and `HighRoom`  
+  - Dynamic room availability and pricing  
+  - Reservation history tracking  
 
-Dynamic room availability and price calculation.
+- 👤 **Guest Functionalities**  
+  - View available rooms  
+  - Book or cancel reservations  
+  - Check total days of stay and price  
 
-Reservation history tracking.
+- 🧹 **Employee Modules**  
+  - Housekeeping can update room cleanliness status  
+  - Receptionist can manage reservations and guest records  
 
-👤 Guest Functionalities
+- 💾 **Data Persistence**  
+  - File-based storage for users, rooms, and reservations  
+  - Read/write and CRUD operations handled via file I/O  
 
-Check room availability.
+- 🎨 **Modern JavaFX UI**  
+  - Clean and responsive interface using FXML and CSS  
+  - Scene-based navigation with consistent styling  
 
-Reserve or cancel a room.
+---
 
-View total days of stay and total cost.
+## 📂 Project Structure
 
-🧹 Housekeeping & Receptionist Modules
-
-Staff can update room cleanliness status.
-
-Receptionists can manage reservations and view guest records.
-
-💾 Data Persistence
-
-Data saved and retrieved from local files.
-
-Supports CRUD operations for users, reservations, and rooms.
-
-🎨 Modern UI with JavaFX
-
-Clean and user-friendly design.
-
-Multiple scenes for different roles and functionalities.
-
-📂 Project Structure
-graphql
-Copy
-Edit
 Hotel-Management-System-Project/
-│
 ├── src/
-│   ├── controllers/        # JavaFX controller classes
-│   ├── models/             # Guest, Room, Reservation, Employee classes
-│   ├── utils/              # File handling, data validation, utilities
-│   ├── Main.java           # Main entry point
+│ ├── controllers/ # JavaFX controller classes
+│ ├── models/ # Core classes: Guest, Room, etc.
+│ ├── utils/ # File handling and helper functions
+│ └── Main.java # Main entry point
 │
 ├── resources/
-│   ├── fxml/               # FXML files for UI design
-│   ├── css/                # Styling for JavaFX UI
+│ ├── fxml/ # UI design files (FXML)
+│ └── css/ # Custom JavaFX styles
 │
-├── data/                   # User and reservation data files
-├── README.md
-🧠 Concepts Used
-Object-Oriented Programming (Encapsulation, Inheritance, Polymorphism)
+├── data/ # Persistent storage for users and reservations
+└── README.md
 
-JavaFX GUI Development
+---
 
-File Handling in Java
+## 💡 Technologies & Concepts
 
-Exception Handling
+- Java 11+
+- JavaFX (FXML, Scene Builder)
+- Object-Oriented Programming  
+- File I/O Handling  
+- Exception Handling  
+- Multithreading *(optional/planned)*  
 
-Multithreading (optional or planned)
-
-💡 How to Run
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/mohamedhishm/Hotel-Management-System-Project.git
-Open the project in an IDE like IntelliJ IDEA or Eclipse.
-
-Make sure JavaFX is configured in your environment.
-
-Run Main.java.
-
-📸 Screenshots
-(You can insert screenshots of login screen, room reservation form, etc. here)
-
-🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change or improve.
-
-📧 Contact
-For inquiries or feedback, contact mohamedabnhisham@gmail.com
+---
