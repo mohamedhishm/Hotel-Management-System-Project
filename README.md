@@ -34,21 +34,7 @@ A Java-based **Hotel Management System** designed to automate hotel operations i
 
 ---
 
-## 📂 Project Structure
-
-Hotel-Management-System-Project/
-├── src/
-│ ├── controllers/ # JavaFX controller classes
-│ ├── models/ # Core classes: Guest, Room, etc.
-│ ├── utils/ # File handling and helper functions
-│ └── Main.java # Main entry point
-│
-├── resources/
-│ ├── fxml/ # UI design files (FXML)
-│ └── css/ # Custom JavaFX styles
-│
-├── data/ # Persistent storage for users and reservations
-└── README.md
+<pre> ## 📂 Project Structure ``` Hotel-Management-System-Project/ ├── src/ │ ├── controllers/ # JavaFX controller classes │ ├── models/ # Core classes: Guest, Room, etc. │ ├── utils/ # File handling and helper functions │ └── Main.java # Main entry point │ ├── resources/ │ ├── fxml/ # UI design files (FXML) │ └── css/ # Custom JavaFX styles │ ├── data/ # Persistent storage for users and reservations └── README.md # Project documentation ``` </pre>
 
 ---
 
